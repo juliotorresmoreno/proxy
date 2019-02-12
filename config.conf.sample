@@ -1,0 +1,11 @@
+{
+    "address": ":8080",
+    "remote": "api.clipclap.co:80",
+    "debug": true,
+    "logging": true,
+    "mode": "tunneling",
+    "logs": "/home/juliotorres/go/src/github.com/juliotorresmoreno/proxy/logs",
+    "tunneling": {
+        "buffersize": 65536
+    }
+}
