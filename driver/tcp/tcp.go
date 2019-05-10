@@ -1,4 +1,4 @@
-package tunneling
+package tcp
 
 import (
 	"fmt"

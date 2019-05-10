@@ -6,7 +6,7 @@ import (
 
 	"github.com/juliotorresmoreno/proxy/config"
 	"github.com/juliotorresmoreno/proxy/driver/http"
-	"github.com/juliotorresmoreno/proxy/driver/tunneling"
+	"github.com/juliotorresmoreno/proxy/driver/tcp"
 )
 
 func main() {
@@ -14,7 +14,7 @@ func main() {
 	os.MkdirAll(conf.Logs, 644)
 	switch conf.Mode {
 	case "tunneling":
-		log.Fatal(tunneling.Start(conf))
+		log.Fatal(tcp.Start(conf))
 	case "http":
 		log.Fatal(http.Start(conf))
 	}
