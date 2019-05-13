@@ -1,0 +1,11 @@
+[Unit]
+Description=Una descripcion
+After=network.target auditd.service
+
+[Service]
+ExecStart=/opt/proxy/start.sh
+KillMode=process
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
